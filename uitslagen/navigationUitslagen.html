@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--We are using the VariableNavigation.css which is located in the css folder-->
+    <link rel="stylesheet" href="../css/VariableNavigation.css" type="text/css" />
+    <!--We are using jQuery scripts-->
+    <script script language="javascript" type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--All scripts-->
+    <script script language="javascript" type="text/javascript" src="../scripts/ScriptsNavigationUitslagen.js"></script>
+    <title></title>
+</head>
+<body onload="InitializeVariableNavigation()">
+    <!--Variable Navigation-->
+    <div id="idVariableNavigation">
+        <!--Variable Navigation-->
+        <div id="idDivVariableNavigation">
+            <div class="clVariableNavigationSmallElement">
+                <input id="idButtonVariableNavigation1" type="button" value="Alles" class="clVariableNavigationActive" onclick="ChangeActiveVariableNavigation('idButtonVariableNavigation1')" />
+            </div>
+            <div class="clVariableNavigationSmallElement">
+                <input id="idButtonVariableNavigation2" type="button" value="Kids Run 1" onclick="ChangeActiveVariableNavigation('idButtonVariableNavigation2')" />
+            </div>
+            <div class="clVariableNavigationSmallElement">
+                <input id="idButtonVariableNavigation3" type="button" value="Kids Run 2" onclick="ChangeActiveVariableNavigation('idButtonVariableNavigation3')" />
+            </div>
+            <div class="clVariableNavigationSmallElement">
+                <input id="idButtonVariableNavigation4" type="button" value="Rolstoel Race" onclick="ChangeActiveVariableNavigation('idButtonVariableNavigation4')" />
+            </div>
+            <div class="clVariableNavigationSmallElement">
+                <input id="idButtonVariableNavigation5" type="button" value="5 km" onclick="ChangeActiveVariableNavigation('idButtonVariableNavigation5')" />
+            </div>
+            <div class="clVariableNavigationSmallElement">
+                <input id="idButtonVariableNavigation6" type="button" value="10 km" onclick="ChangeActiveVariableNavigation('idButtonVariableNavigation6')" />
+            </div>
+            <div class="clVariableNavigationSmallElement">
+                <input id="idButtonVariableNavigation7" type="button" value="Bedrijven" onclick="ChangeActiveVariableNavigation('idButtonVariableNavigation7')" />
+            </div>
+        </div>
+    </div>
+
+    <!--Variable Data-->
+    <div id="idVariableData">
+
+    </div>
+</body>
+</html>
