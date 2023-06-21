@@ -1336,6 +1336,21 @@
 		object-fit: contain;
 		}
 
+	/* Beverse 4 */
+	.clDivBeverse4{
+		display: block;
+		margin: 0;
+		height: 30em;
+		width: 100%;
+		}
+
+	.clImageBeverse4{
+		max-height: 100%;
+		max-width: 100%;
+		object-fit: contain;
+		}
+	
+
  /* Partners */
  .clDivImagePartner{
     display: block;
@@ -1848,6 +1863,22 @@
 		text-align: center;
 	}
 
+	/* Beverse 4 */
+
+	#idBeverse4 .clBeverse4 {
+		text-align: left;
+	}
+
+	#idBeverse4 .clBeverse4 p {
+		color: #1e1e22;
+		font-size:1em;
+		text-align: left;
+	}
+
+	#idBeverse4 .clBeverse4  {
+		text-align: center;
+	}
+
     /* Partners */
 
 	#idPartners .clPartner {
@@ -2107,7 +2138,8 @@
     #idUitslag5km .clUitslag5km,
     #idUitslag10km .clUitslag10km,
 	#idUitslagPloegen5km .clUitslagPloegen5km,
-	#idUitslagPloegen10km .clUitslagPloegen10km
+	#idUitslagPloegen10km .clUitslagPloegen10km,
+	#idUitslagBeverse4 .clUitslagBeverse4
     {
 		text-align: left;
 	}
@@ -2118,7 +2150,8 @@
         #idUitslag5km table,
         #idUitslag10km table,
 		#idUitslagPloegen5km table,
-		#idUitslagPloegen10km table
+		#idUitslagPloegen10km table,
+		#idUitslagBeverse4 table
         {
         margin: 20px 0px 50px 0px;  /*setting the margin for each side of an element (top, right, bottom, and left).*/
         border: 3px solid #1e1e22;
@@ -2131,7 +2164,8 @@
         #idUitslag5km th,
         #idUitslag10km th,
 		#idUitslagPloegen5km th,
-		#idUitslagPloegen10km th
+		#idUitslagPloegen10km th,
+		#idUitslagBeverse4 th
         {
             border: 2px solid #1e1e22;
             border-collapse: collapse;
@@ -2149,7 +2183,8 @@
         #idUitslag5km td,
         #idUitslag10km td,
 		#idUitslagPloegen5km td,
-		#idUitslagPloegen10km td
+		#idUitslagPloegen10km td,
+		#idUitslagBeverse4 td
         {
             border: solid #1e1e22;
             border-width: 1px 2px 1px 2px; /*property can have from one to four values (for the top border, right border, bottom border, and the left border).*/
@@ -2207,6 +2242,27 @@
         {
           width: 10%;
         }
+
+		.clTableResultsBeverse4 td:nth-child(1)
+        {
+          width: 10%;
+        }
+        .clTableResultsBeverse4 td:nth-child(2)
+        {
+          width: 30%;
+        }
+        .clTableResultsBeverse4 td:nth-child(3)
+        {
+          width: 15%;
+        }
+        .clTableResultsBeverse4 td:nth-child(4)
+        {
+          width: 30%;
+        }
+        .clTableResultsBeverse4 td:nth-child(5)
+        {
+          width: 15%;
+		}
 
     /*UitslagPDF */
 
