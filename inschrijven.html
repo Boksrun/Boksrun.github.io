@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <!--All scripts-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript"> emailjs.init('C1WnatkSgnLPX8LZD') </script>
-    <script script language="javascript" type="text/javascript" src="js/inschrijving.js"></script>
 </head>
 
 <body>
@@ -70,6 +66,7 @@
                                 <li><a href="uitslagen.html#uitslagPloegen5km">Ploegen 5 km</a></li>
                                 <li><a href="uitslagen.html#uitslag10km">10 km</a></li>
                                 <li><a href="uitslagen.html#uitslagPloegen10km">Ploegen 10 km</a></li>
+                                <li><a href="uitslagen.html#uitslagBeverse4">Loop de Beverse 4</a></li>
                             </ul>
                         </li>
                         <li>
@@ -86,184 +83,19 @@
             <div id="inschrijven" class="title">Inschrijven</div>
             <div id="idInschrijven" class="container">
                 <div class="row 150%">
-                    <div class="3u 12u(mobile)">
-                    </div>
-                    <div class="6u 12u(mobile)">
-                        <p>
-                            IN TEGENSTELLING TOT DE VOORBIJE EDITIES ONTVANGT U NIET DIRECT EEN BEVESTIGINGSMAIL,
-                            DIT KAN ENKELE DAGEN DUREN, ONZE EXCUSES VOOR HET ONGEMAK!
-                        </p>
-                        <section>
-                            <form id="idFormInschrijven" method="post" action="#">
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Voornaam: *</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <input type="text" id="idInschrijvingVoornaam" maxlength="40"/>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Naam: *</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <input type="text"  id="idInschrijvingNaam" maxlength="40"/>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Postcode: *</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <input type="text"  id="idInschrijvingPostcode" maxlength="18"/>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Gemeente: *</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <input type="text"  id="idInschrijvingGemeente" maxlength="40" />
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Geslacht: *</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <select type="selectFormInschrijving"  id="idInschrijvingGeslacht">
-                                            <option value="Selecteer">-- Selecteer --</option>
-                                            <option value="M">M</option>
-                                            <option value="V">V</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Geboortedatum: *<br />(dd/mm/jjjj)</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <input type="text" placeholder="01/01/1980" id="idInschrijvingGeboorteDatum" maxlength="15"/>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>E-mail: *</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <input type="text" id="idInschrijvingEmail" maxlength="70"/>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Loopclub:</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <input type="text" id="idInschrijvingLoopclub" maxlength="70"/>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Bedrijvenklassement:</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <input type="text" id="idInschrijvingBedrijf" maxlength="70"/>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Lid Boks vzw: *</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <select type="selectFormInschrijving" id="idInschrijvingBokslid">
-                                            <option value="Selecteer">-- Selecteer --</option>
-                                            <option value="JA">Ja</option>
-                                            <option value="NEE">Nee</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Stofwisselingsziekte: *</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <select type="selectFormInschrijving" id="idInschrijvingStofwisselingsziekte">
-                                            <option value="Selecteer">-- Selecteer --</option>
-                                            <option value="JA">Ja</option>
-                                            <option value="NEE">Nee</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>Categorie: *</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                        <select type="selectFormInschrijving" id="idInschrijvingCategorie">
-                                            <option value="Selecteer">-- Selecteer --</option>
-                                            <option value="KIDSRUN">Kids Run (geb. 2013-2017)</option>
-                                            <option value="ROLSTOELRACE">Rolstoelrace</option>
-                                            <option value="HANDBIKERACE">Handbikerace</option>
-                                            <option value="5KM">5 km</option>
-                                            <option value="10KM">10 km</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="5u 12u(mobile)">
-                                        <p>* = Verplichte velden</p>
-                                    </div>
-                                    <div class="6u 12u(mobile)">
-                                    </div>
-                                </div>
-                                <div class="row 50%">
-                                    <div class="12u">
-                                        <p class="clPrivacy"><input type="checkbox" id="idCbxPrivacy">Ik heb de <a href="PrivacyVerklaring.html" target="_blank">Privacy Verklaring</a> gelezen en ga hiermee akkoord</label>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="12u">
-                                        <p>
-                                            IN TEGENSTELLING TOT DE VOORBIJE EDITIES ONTVANGT U NIET DIRECT EEN BEVESTIGINGSMAIL,
-                                            DIT KAN ENKELE DAGEN DUREN, ONZE EXCUSES VOOR HET ONGEMAK! </Br></Br>
-                                            WACHTTIJD VOOR BEVESTIGING KAN EVEN DUREN ...  DUS GELIEVE TE WACHTEN OP EEN MELDING ALVORENS OPNIEUW TE KLIKKEN
-                                        </p>
-                                        <ul class="actions">
-                                            <li class="button style1" id="idBtnBevestigInschrijving" onclick="bevestigInschrijving()">Bevestig</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- Variables used for sending mail -->
-                                <input type="hidden" id="idVoornaamMail" name="voornaam">
-                                <input type="hidden" id="idNaamMail" name="naam">
-                                <input type="hidden" id="idPostcodeMail" name="postcode">
-                                <input type="hidden" id="idGemeenteMail" name="gemeente">
-                                <input type="hidden" id="idGeslachtMail" name="geslacht">
-                                <input type="hidden" id="idGeboortedatumMail" name="geboortedatum">
-                                <input type="hidden" id="idEmailMail" name="email">
-                                <input type="hidden" id="idLoopclubMail" name="loopclub">
-                                <input type="hidden" id="idBedrijfMail" name="bedrijf">
-                                <input type="hidden" id="idBokslidMail" name="bokslid">
-                                <input type="hidden" id="idStofwisselingsziekteMail" name="stofwisselingsziekte">
-                                <input type="hidden" id="idCategorieMail" name="categorie">
-                            </form>
+                    <div class="12u 12u(mobile)">
+                        <section class="clInschrijven">
+                            <h1>
+                                De voorinschrijvingen via de website zijn afgesloten, maar U kan natuurlijk<br/>
+                                de dag zelf nog inschrijven tot 15 minuten voor de start van elke run.
+                            </h1>
                         </section>
                     </div>
-                    </div>
-            </div>
-        </div>
-
-        <div id="idAlertBoxInschrijvingenOverlay">
-            <div id="idAlertBoxInschrijvingen">
-                <div>
-                    <div id="idAlertBoxHeader"></div>
-                    <div id="idAlertBoxMessage"></div>
-                    <div id="idAlertBoxFooter"></div>
                 </div>
             </div>
         </div>
+
+
 
 
         <!-- Footer -->
@@ -309,15 +141,15 @@
             </div>
         </div>
     </div>
-    <!-- Scripts -->
+        <!-- Scripts -->
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/skel-viewport.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="assets/js/main.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/skel-viewport.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
 
 </body>
 </html>
